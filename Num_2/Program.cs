@@ -3,9 +3,13 @@
 // 452 -> 11
 // 82 -> 10
 // 9012 -> 12
-Console.Write("Enter number: ");
-int number = Convert.ToInt32(Console.ReadLine());
-int num = 0;
+int SetNumber(string text = "")
+{
+    System.Console.Write($"Enter number {text}: ");
+    int num = Convert.ToInt32(Console.ReadLine());
+    return num;
+}
+int number = SetNumber();
 int sum = 0;
 while (number > 0)
 {
